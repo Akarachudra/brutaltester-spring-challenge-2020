@@ -36,7 +36,7 @@ public class Referee extends AbstractReferee {
         this.seed = gameManager.getSeed();
 
         // Set configuration depending on game rules:
-        Config.setDefaultValueByLevel(LeagueRules.fromIndex(gameManager.getLeagueLevel()));
+        Config.setDefaultValueByLevel(LeagueRules.fromIndex(4));
 
         // Override configuration with game parameters:
         if (System.getProperty("allow.config.override") != null) {
